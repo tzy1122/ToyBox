@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toy Box</title>
+    </head>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <div class="nav">
+        <ul>
+            <li><a href="file:///Z:/Humcom2/Toy%20Box.html">Home</a></li>
+            <li><a href="file:///Z:/Humcom2/Toy%20Box.html">About</a></li>
+            <li><a href="file:///Z:/Humcom2/Toy%20Box.html">Contacts</a></li>
+            <li><a href="file:///Z:/Humcom2/Toy%20Box.html">Cars</a></li>
+        </ul>
+    </div>
+
+    <div class="car_container">
+      <p>Welcome to the World of GUMBALL!!</p>
+        
+<div class="slideshow-container">
+
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 20</div>
+      <img src="1.jpg" style="width:100%">
+      <div class="text">Ferrari LaFerrari</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 20</div>
+      <img src="2.jpg" style="width:100%">
+      <div class="text">Lamborghini Veneno</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 20</div>
+      <img src="3.jpg" style="width:100%">
+      <div class="text">Audi E-Tron GT</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 20</div>
+        <img src="4.jpg" style="width:100%">
+        <div class="text">Audi RS6 Avant</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 20</div>
+        <img src="5.jpg" style="width:100%">
+        <div class="text">Tesla Model Y</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 20</div>
+        <img src="6.jpg" style="width:100%">
+        <div class="text">BMW M3</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 20</div>
+        <img src="7.jpg" style="width:100%">
+        <div class="text">Mercedes Benz Sprinter</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 20</div>
+        <img src="8.jpg" style="width:100%">
+        <div class="text">Audi TT</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 20</div>
+        <img src="9.jpg" style="width:100%">
+        <div class="text">Lamborghini Murcielago</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 20</div>
+        <img src="10.jpg" style="width:100%">
+        <div class="text">Porsche Carrera GT</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 20</div>
+        <img src="11.jpg" style="width:100%">
+        <div class="text">Porsche 918 Spyder</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">12 / 20</div>
+        <img src="12.jpg" style="width:100%">
+        <div class="text">Porsche GT3 RS</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">13 / 20</div>
+        <img src="13.jpg" style="width:100%">
+        <div class="text">Lamborghini Huracan</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">14 / 20</div>
+        <img src="14.jpg" style="width:100%">
+        <div class="text">Lamborghini Hurancan Spyder</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">15 / 20</div>
+        <img src="15.jpg" style="width:100%">
+        <div class="text">Lamborghini Veneno</div>
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">16 / 20</div>
+        <img src="16.jpg" style="width:100%">
+        <div class="text">Lamborghini Aventador SV</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">17 / 20</div>
+        <img src="17.jpg" style="width:100%">
+        <div class="text">Lamborghini Aventador</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">18 / 20</div>
+        <img src="18.jpg" style="width:100%">
+        <div class="text">Chevy Corvette</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">19 / 20</div>
+        <img src="19.jpg" style="width:100%">
+        <div class="text">Chevy Corvette C6.R</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">20 / 20</div>
+        <img src="20.jpg" style="width:100%">
+        <div class="text">Lexus LX</div>
+      </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<footer>
+    <p>Kakaselpon Mo YAN!!</p>
+    <p>&copy; 2024 All rights reserved.</p>
+</footer>
+
+</html> 
